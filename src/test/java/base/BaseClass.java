@@ -11,7 +11,7 @@ public class BaseClass {
 	
 	private final String _driverUrl = "/Users/jovasguzman/Selenium/drivers/chromedriver_mac64/chromedriver";
 	public final String pageUrl = "https://advantageonlineshopping.com";
-	public WebDriver driver = new ChromeDriver();;
+	public WebDriver driver = new ChromeDriver();
 	
 	@BeforeClass
 	public void setUpClass() {
