@@ -12,11 +12,12 @@ public class BaseClass {
 	private final String _driverUrl = "C:\\SDETAcademy\\Drivers\\chromedriver.exe";
 
 	public final String pageUrl = "https://academybugs.com/find-bugs/";
-	public WebDriver driver = new ChromeDriver();
+	public WebDriver driver;
 	
 	@BeforeClass
 	public void setUpClass() {
 		System.setProperty("webdriver.chrome.driver", _driverUrl);
+		driver = new ChromeDriver();
 		driver.get(pageUrl);
 		driver.manage().window().maximize();
 	}
