@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TermsAndConditions extends BaseClass{
 	
 	@Test
-	public void run() {
+	public void TC07() {
 		 driver.findElement(By.linkText("Terms & Conditions")).click();
 	}
 }
