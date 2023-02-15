@@ -7,6 +7,7 @@
       <class name="tests.SortProducts"/>
       <class name="tests.TestCases1_3"/>
       <class name="tests.TermsAndConditions"/>
+      <class name="tests.Paginate" />
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
