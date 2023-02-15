@@ -28,13 +28,13 @@ public class ProductTest extends BaseClass {
 	}
 	
 	@Test
-	public void testkHotItem() {
+	public void testHotItem() {
 		try {
 			driver.get(pageUrl);
 			Thread.sleep(2500);
 			WebElement product = driver.findElement(By.xpath(_productXpath));
 			product.click();
-			Thread.sleep(2500);
+			Thread.sleep(3500);
 			WebElement hotItem = driver.findElement(By.xpath(_hotItemXpath));
 			hotItem.click();
 		} catch (InterruptedException e) {
