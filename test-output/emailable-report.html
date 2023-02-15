@@ -9,19 +9,42 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,493</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">51,029</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.ProductTest</td><td><a href="#m0">testHotItem</a></td><td rowspan="1">1676479765571</td><td rowspan="1">9781</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.ProductTest</td><td><a href="#m1">addProductCar</a></td><td rowspan="1">1676479757599</td><td rowspan="1">7969</td></tr><tr class="passedodd"><td rowspan="1">tests.SearchItem</td><td><a href="#m2">RunTC06</a></td><td rowspan="1">1676479740692</td><td rowspan="1">14039</td></tr><tr class="passedeven"><td rowspan="1">tests.SortProducts</td><td><a href="#m3">run</a></td><td rowspan="1">1676479778689</td><td rowspan="1">1129</td></tr><tr class="passedodd"><td rowspan="1">tests.TermsAndConditions</td><td><a href="#m4">run</a></td><td rowspan="1">1676479788194</td><td rowspan="1">15066</td></tr><tr class="passedeven"><td rowspan="3">tests.TestCases1_3</td><td><a href="#m5">mainPageProducts</a></td><td rowspan="1">1676479782383</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m6">productDetails</a></td><td rowspan="1">1676479782405</td><td rowspan="1">1014</td></tr><tr class="passedeven"><td><a href="#m7">productQuantity</a></td><td rowspan="1">1676479783423</td><td rowspan="1">178</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.ProductTest</td><td><a href="#m0">TC06</a></td><td rowspan="1">1676489487963</td><td rowspan="1">3295</td></tr><tr class="failedeven"><td><a href="#m1">TC10_1</a></td><td rowspan="1">1676489491266</td><td rowspan="1">9783</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.ProductTest</td><td><a href="#m2">TC05</a></td><td rowspan="1">1676489479305</td><td rowspan="1">8650</td></tr><tr class="passedeven"><td><a href="#m3">TC08</a></td><td rowspan="1">1676489501055</td><td rowspan="1">4430</td></tr><tr class="passedodd"><td rowspan="1">tests.TermsAndConditions</td><td><a href="#m4">TC07</a></td><td rowspan="1">1676489508041</td><td rowspan="1">14682</td></tr><tr class="passedeven"><td rowspan="3">tests.TestCases1_3</td><td><a href="#m5">TC01</a></td><td rowspan="1">1676489525396</td><td rowspan="1">19</td></tr><tr class="passedeven"><td><a href="#m6">TC02</a></td><td rowspan="1">1676489525421</td><td rowspan="1">975</td></tr><tr class="passedeven"><td><a href="#m7">TC03</a></td><td rowspan="1">1676489526400</td><td rowspan="1">91</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">tests.ProductTest#testHotItem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;https://academybugs.com/wp-content/uploads/2020/06/product-accessory2.jpg&quot; \=&quot;&quot;&gt; is not clickable at point (1087, 510). Other element would receive the click: &lt;div id=&quot;cc-window&quot; data-nosnippet=&quot;true&quot; role=&quot;dialog&quot; aria-live=&quot;polite&quot; aria-label=&quot;cookieconsent&quot; aria-describedby=&quot;cookieconsent:desc&quot; class=&quot;cc-window cc-floating cc-type-opt-in cc-theme-minimal cc-bottom cc-right cc-color-override--123706181  cmplz-categories-no&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
+<h2>Test</h2><h3 id="m0">tests.ProductTest#TC06</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5af9a376a93e4141c322f52b08833aa, findElement {using=css selector, value=//*[@id=&quot;ec_product_image_effect_dnk-yellow-shoes&quot;]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f5af9a376a93e4141c322f52b08833aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at tests.ProductTest.TC06(ProductTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ProductTest#TC10_1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img src=&quot;https://academybugs.com/wp-content/uploads/2020/06/product-accessory2.jpg&quot; \=&quot;&quot;&gt; is not clickable at point (1087, 510). Other element would receive the click: &lt;div id=&quot;cc-window&quot; data-nosnippet=&quot;true&quot; role=&quot;dialog&quot; aria-live=&quot;polite&quot; aria-label=&quot;cookieconsent&quot; aria-describedby=&quot;cookieconsent:desc&quot; class=&quot;cc-window cc-floating cc-type-opt-in cc-theme-minimal cc-bottom cc-right cc-color-override--123706181  cmplz-categories-no&quot; style=&quot;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=110.0.5481.96)
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [75a260bd4e0888b75287b51b3acad4da, clickElement {id=a0b4100f-6f36-462e-a1d6-31dfe720ccb2}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64585/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (75a260bd4e0888b75287b51b3acad4da)] -&gt; xpath: //*[@id=&quot;ec_image_product_widget_anchor-bracelet_1_0&quot;]/img]
-Session ID: 75a260bd4e0888b75287b51b3acad4da
+Command: [f5af9a376a93e4141c322f52b08833aa, clickElement {id=92dd4041-586f-4ecd-b5ff-ef361f4e82d7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f5af9a376a93e4141c322f52b08833aa)] -&gt; xpath: //*[@id=&quot;ec_image_product_widget_anchor-bracelet_1_0&quot;]/img]
+Session ID: f5af9a376a93e4141c322f52b08833aa
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -31,15 +54,14 @@ Session ID: 75a260bd4e0888b75287b51b3acad4da
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at tests.ProductTest.testHotItem(ProductTest.java:39)
+	at tests.ProductTest.TC10_1(ProductTest.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.ProductTest#addProductCar</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.SearchItem#RunTC06</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.SortProducts#run</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.TermsAndConditions#run</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.TestCases1_3#mainPageProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.TestCases1_3#productDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.TestCases1_3#productQuantity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ProductTest#TC05</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ProductTest#TC08</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.TermsAndConditions#TC07</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.TestCases1_3#TC01</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.TestCases1_3#TC02</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.TestCases1_3#TC03</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
