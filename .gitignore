@@ -1,0 +1,4 @@
+/target/
+/test-output/
+pom.xml
+.classpath
