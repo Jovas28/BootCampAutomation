@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.ProductTest"/>
       <class name="tests.TermsAndConditions"/>
-      <class name="tests.TestCases1_3"/>
+      <class name="tests.FilterByPrice"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

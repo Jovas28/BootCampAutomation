@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                    <span class="method-stats">9 methods, 6 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,27 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC01">TC01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC02">TC02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC03">TC03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC06">TC06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC09">TC09</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,21 +141,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.TestCases1_3" class="method navigator-link" hash-for-method="TC01">TC01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.TestCases1_3" class="method navigator-link" hash-for-method="TC02">TC02</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.TestCases1_3" class="method navigator-link" hash-for-method="TC03">TC03</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC05">TC05</a> <!-- method navigator-link -->
@@ -171,18 +176,69 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC06">
-                  </a> <!-- TC06 -->
-                  <span class="method-name">TC06</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=110.0.5481.96)
+                  <a name="TC01">
+                  </a> <!-- TC01 -->
+                  <span class="method-name">TC01</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at tests.ProductTest.TC01(ProductTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Products displayed on main page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02">
+                  </a> <!-- TC02 -->
+                  <span class="method-name">TC02</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;https://academybugs.com/store/dnk-yellow-shoes/&quot; class=&quot;ec_image_link_cover&quot;&gt;&lt;/a&gt; is not clickable at point (191, 411). Other element would receive the click: &lt;div class=&quot;academy-bug-overlay&quot; style=&quot;background: rgba(0, 0, 0, 0.8); z-index: 100000; position: fixed; top: 0; left: 0; height:4142px; width:1263px;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=110.0.5481.96)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5af9a376a93e4141c322f52b08833aa, findElement {using=css selector, value=//*[@id=&quot;ec_product_image_effect_dnk-yellow-shoes&quot;]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f5af9a376a93e4141c322f52b08833aa
+Command: [b3df77c01589ea61372b1edf922d4e98, clickElement {id=463c105d-5f9b-4b36-81eb-0c1b710d4e4a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55905/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b3df77c01589ea61372b1edf922d4e98)] -&gt; xpath: //*[@id=&quot;ec_product_image_effect_dnk-yellow-shoes&quot;]/a]
+Session ID: b3df77c01589ea61372b1edf922d4e98
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at tests.ProductTest.TC02(ProductTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Product clicked should be display detailed information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC03">
+                  </a> <!-- TC03 -->
+                  <span class="method-name">TC03</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;ec_quantity_29&apos;]&quot;}
+  (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3df77c01589ea61372b1edf922d4e98, findElement {using=xpath, value=//input[@id=&apos;ec_quantity_29&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55905/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b3df77c01589ea61372b1edf922d4e98
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -194,12 +250,59 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at tests.ProductTest.TC06(ProductTest.java:44)
+	at tests.ProductTest.TC03(ProductTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Product details, quantity selected and currency selection)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06">
+                  </a> <!-- TC06 -->
+                  <span class="method-name">TC06</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b3df77c01589ea61372b1edf922d4e98, findElement {using=css selector, value=//*[@id=&quot;ec_product_image_effect_dnk-yellow-shoes&quot;]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55905/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b3df77c01589ea61372b1edf922d4e98
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at tests.ProductTest.TC06(ProductTest.java:78)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Validate that the user is able to search a product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09">
+                  </a> <!-- TC09 -->
+                  <span class="method-name">TC09</span>
+                  <div class="stack-trace">java.lang.Error: ERROR EXIST!!
+	at tests.ProductTest.TC09(ProductTest.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Pagination table shows elements)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -212,10 +315,10 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5af9a376a93e4141c322f52b08833aa, clickElement {id=92dd4041-586f-4ecd-b5ff-ef361f4e82d7}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f5af9a376a93e4141c322f52b08833aa)] -&gt; xpath: //*[@id=&quot;ec_image_product_widget_anchor-bracelet_1_0&quot;]/img]
-Session ID: f5af9a376a93e4141c322f52b08833aa
+Command: [b3df77c01589ea61372b1edf922d4e98, clickElement {id=e1a5666f-7fb6-461b-898b-1564df5042e4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ERICKJ~1.GUZ\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:55905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55905/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b3df77c01589ea61372b1edf922d4e98)] -&gt; xpath: //*[@id=&quot;ec_image_product_widget_anchor-bracelet_1_0&quot;]/img]
+Session ID: b3df77c01589ea61372b1edf922d4e98
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -225,7 +328,7 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at tests.ProductTest.TC10_1(ProductTest.java:67)
+	at tests.ProductTest.TC10_1(ProductTest.java:101)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -276,35 +379,6 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.TestCases1_3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC01">
-                  </a> <!-- TC01 -->
-                  <span class="method-name">TC01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC02">
-                  </a> <!-- TC02 -->
-                  <span class="method-name">TC02</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC03">
-                  </a> <!-- TC03 -->
-                  <span class="method-name">TC03</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -319,7 +393,6 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
     &lt;classes&gt;
       &lt;class name=&quot;tests.ProductTest&quot;/&gt;
       &lt;class name=&quot;tests.TermsAndConditions&quot;/&gt;
-      &lt;class name=&quot;tests.TestCases1_3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -333,7 +406,7 @@ Session ID: f5af9a376a93e4141c322f52b08833aa
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -359,44 +432,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC07')
 data.setCell(0, 2, 'tests.TermsAndConditions')
-data.setCell(0, 3, 14682);
+data.setCell(0, 3, 14668);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC10_1')
+data.setCell(1, 1, 'TC05')
 data.setCell(1, 2, 'tests.ProductTest')
-data.setCell(1, 3, 9783);
+data.setCell(1, 3, 9730);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC05')
+data.setCell(2, 1, 'TC10_1')
 data.setCell(2, 2, 'tests.ProductTest')
-data.setCell(2, 3, 8650);
+data.setCell(2, 3, 8991);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TC08')
 data.setCell(3, 2, 'tests.ProductTest')
-data.setCell(3, 3, 4430);
+data.setCell(3, 3, 4334);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TC06')
 data.setCell(4, 2, 'tests.ProductTest')
-data.setCell(4, 3, 3295);
+data.setCell(4, 3, 3408);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC02')
-data.setCell(5, 2, 'tests.TestCases1_3')
-data.setCell(5, 3, 975);
+data.setCell(5, 2, 'tests.ProductTest')
+data.setCell(5, 3, 1131);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC03')
-data.setCell(6, 2, 'tests.TestCases1_3')
-data.setCell(6, 3, 91);
+data.setCell(6, 1, 'TC09')
+data.setCell(6, 2, 'tests.ProductTest')
+data.setCell(6, 3, 620);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC01')
-data.setCell(7, 2, 'tests.TestCases1_3')
-data.setCell(7, 3, 19);
+data.setCell(7, 1, 'TC03')
+data.setCell(7, 2, 'tests.ProductTest')
+data.setCell(7, 3, 37);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC01')
+data.setCell(8, 2, 'tests.ProductTest')
+data.setCell(8, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -428,54 +505,59 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC09</span>
+                <span class="method-start">3655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC01</span>
+                <span class="method-start">4283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC02</span>
+                <span class="method-start">4290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC03</span>
+                <span class="method-start">5426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">TC05</span>
-                <span class="method-start">3822 ms</span>
+                <span class="method-start">5465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC06</span>
-                <span class="method-start">12480 ms</span>
+                <span class="method-start">15196 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC10_1</span>
-                <span class="method-start">15783 ms</span>
+                <span class="method-start">18606 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC08</span>
-                <span class="method-start">25572 ms</span>
+                <span class="method-start">27599 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TermsAndConditions</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">30005 ms</span>
+                <span class="method-start">31935 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC07</span>
-                <span class="method-start">32558 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.TestCases1_3</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
-                <span class="method-start">47244 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">TC01</span>
-                <span class="method-start">49913 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC02</span>
-                <span class="method-start">49938 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC03</span>
-                <span class="method-start">50917 ms</span>
+                <span class="method-start">35529 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

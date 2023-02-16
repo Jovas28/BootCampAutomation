@@ -6,7 +6,11 @@
       <class name="tests.ProductTest">
         <methods>
           <include name="TC10_1"/>
+          <include name="TC09"/>
+          <include name="TC01"/>
           <include name="TC06"/>
+          <include name="TC02"/>
+          <include name="TC03"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- tests.ProductTest -->

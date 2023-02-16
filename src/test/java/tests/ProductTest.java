@@ -1,5 +1,6 @@
 package tests;
 
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -20,20 +21,30 @@ public class ProductTest extends BaseClass {
 	final private String _productToSearch = "TSHIRT";
 	final private String _searchProductBtnXpath = "form:nth-child(1) > input:nth-child(3)";
 	final private String _paginateBtnXpath = "//a[@class='what-we-offer-pagination-link']";
+	final private String _productItemClass = "ec_image_container_none ec_dynamic_image_height dynamic_height_rule";
 	
 	@Test (description="Products displayed on main page", priority=1)
-	public void TC01() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+	public void TC01() throws InterruptedException {
+		List<WebElement> items = driver.findElements(By.className(_productItemClass));
+		if(items.size() == 0) {
+			throw new Error("Error showing the products!!!");
+		}
+		Thread.sleep(2500);
 	}
 
-	@Test (description="Product clicked should be display detailed information", dependsOnMethods = "TC01", priority=2)
-	public void TC02() {
+	@Test (description="Product clicked should be display detailed information", priority=2)
+	public void TC02()  throws InterruptedException {
 		WebElement profesionalSuit = driver.findElement(By.xpath(_productXpath));
 		profesionalSuit.click();
+		Thread.sleep(500);
+		String url = driver.getCurrentUrl();
+		if(!url.contains("store")) {
+			throw new Error("Error showing the product detail!!");
+		}
+		Thread.sleep(1500);
 	}
 
-	@Test (description="Product details, quantity selected and currency selection", dependsOnMethods = "TC02", priority=3)
+	@Test (description="Product details, quantity selected and currency selection", priority=3)
 	public void TC03() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,120)");
@@ -45,7 +56,7 @@ public class ProductTest extends BaseClass {
 	@Test(description="Validate that the user is able to add a product to the Car", priority=4)
 	public void TC05() {
 		try {
-			driver.manage().window().maximize();
+			driver.get(pageUrl);
 			Thread.sleep(2500);
 			WebElement product = driver.findElement(By.xpath(_productXpath));
 			product.click();
@@ -118,7 +129,7 @@ public class ProductTest extends BaseClass {
             Thread.sleep(500);
             WebElement errorMessage = driver.findElement(By.xpath("//*[@class=\"academy-bug-overlay\"]"));
             if(errorMessage != null) {
-            	throw new Error("SI EXISTE ERROR");  
+            	throw new Error("ERROR EXIST!!");  
             }
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
