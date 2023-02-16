@@ -5,7 +5,8 @@
     <classes>
       <class name="tests.ProductTest">
         <methods>
-          <include name="testkHotItem"/>
+          <include name="TC10_1"/>
+          <include name="TC09"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- tests.ProductTest -->
